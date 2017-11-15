@@ -15,10 +15,15 @@ router.get('/post', function(req, res, next) {
 
 /* POST submission. */
 router.post('/headlines', function(req, res, next) {
-  var headline = new Headline(req.body);
-  headline.save(function(err, headline){
+  var newHeadline = Headline({
+    title: 'Peter Quill',
+    image: 'starlord55',
+    description: 'password'
+  });
+  //var headline = new Headline(req.body);
+  newHeadline.save(function(err, newHeadline){
     if(err){ return next(err); }
-    res.json(headline);
+    res.json(newHeadline);
   });
 });
 
