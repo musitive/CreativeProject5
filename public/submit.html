@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>FAKE</title>
+        <link rel="stylesheet" media="screen" href="theme.css">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Dallin Frank">
+        <meta name="description" content="The portfolio website I made for BYU C S 260">
+        <meta name="robots" content="all">
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>    
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+        <script src="functionality.js"></script>
+        <script src="scrollify.js"></script>
+    </head>
+    <body>
+        <div class="panel first" data-section-name="first">
+            <div class="inner">
+                <h1 class="title">travel to france</h1>
+            </div>   
+        </div>
+        
+        <script>
+            $(function() {
+                $(".panel").css({"height":$(window).height()});
+                $.scrollify({
+                    section:".panel"
+                });
+                    
+                $(".scroll").click(function(e) {
+                    e.preventDefault();
+                    $.scrollify("move",$(this).attr("href"));
+                });
+            });
+        </script>
+    </body>
+</html>
