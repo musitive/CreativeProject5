@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 /* GET post page. */
 router.get('/post', function(req, res, next) {
-  res.render('index', { title: 'Post' });
+  res.sendFile('submit.html', { root: 'public' });
 });
 
 /* POST submission. */
