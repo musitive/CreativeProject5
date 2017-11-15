@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
-var CommentSchema = new mongoose.Schema({
+var HeadlineSchema = new mongoose.Schema({
   title: String,
   upvotes: {type: Number, default: 0},
 });
-mongoose.model('Comment', CommentSchema);
+mongoose.model('Headline', HeadlineSchema);
