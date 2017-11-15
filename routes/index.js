@@ -14,7 +14,7 @@ router.get('/post', function(req, res, next) {
 });
 
 /* POST submission. */
-router.post('/headlines', function(req, res, next) {
+router.post('/test', function(req, res, next) {
   var newHeadline = Headline({
     title: 'Peter Quill',
     image: 'starlord55',
