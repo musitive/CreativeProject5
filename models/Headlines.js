@@ -1,8 +1,8 @@
 var mongoose = require('mongoose');
-var HeadlineSchema = new mongoose.Schema({
+var HeadlinesSchema = new mongoose.Schema({
   title: String,
   upvotes: {type: Number, default: 0},
   description: String,
   image: String,
 });
-mongoose.model('Headline', HeadlineSchema);
+mongoose.model('Headlines', HeadlinesSchema);

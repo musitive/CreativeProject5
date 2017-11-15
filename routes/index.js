@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mongoose = require('mongoose');
-var Comment = mongoose.model('Headline');
+var Comment = mongoose.model('Headlines');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
@@ -15,16 +15,16 @@ router.get('/post', function(req, res, next) {
 
 /* POST submission. */
 router.post('/submit-entry', function(req, res, next) {
-  var headline = new Headline(req.body);
-  headline.save(function(err, headline){
+  var headlines = new Headlines(req.body);
+  headlines.save(function(err, headlines){
     if(err){ return next(err); }
-    res.json(headline);
+    res.json(headlines);
   });
 });
 
 /* GET headlines. */
 router.get('/headlines', function(req, res, next) {
-  Headline.find(function(err, headlines){
+  Headlines.find(function(err, headlines){
     if(err){ return next(err); }
     res.json(headlines);
   });
