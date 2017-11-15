@@ -14,7 +14,7 @@ router.get('/post', function(req, res, next) {
 });
 
 /* POST submission. */
-router.get('/submit-entry', function(req, res, next) {
+router.post('/submit-entry', function(req, res, next) {
   var headline = new Headline(req.body);
   headline.save(function(err, headline){
     if(err){ return next(err); }
