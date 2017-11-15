@@ -6,4 +6,24 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+/* GET post page. */
+router.get('/post', function(req, res, next) {
+  res.render('index', { title: 'Post' });
+});
+
+/* POST submission. */
+router.get('/submit-entry', function(req, res, next) {
+  res.render('index', { title: 'Submit' });
+});
+
+/* GET headlines. */
+router.get('/headlines', function(req, res, next) {
+  res.render('index', { title: 'Headlines' });
+});
+
+/* POST upvote. */
+router.get('/vote', function(req, res, next) {
+  res.render('index', { title: 'Vote' });
+});
+
 module.exports = router;
