@@ -44,8 +44,27 @@ router.get('/headlines', function(req, res, next) {
   });
 });
 
+router.param('headline', function(req, res, next, id) {
+  var query = Headline.findById(id);
+  query.exec(function (err, headline){
+    if (err) { return next(err); }
+    if (!headline) { return next(new Error("can't find headline")); }
+    req.headline = headline;
+    return next();
+  });
+});
+
+router.get('/headlines/:headline', function(req, res) {
+  res.json(req.headline);
+});
+
 /* POST upvote. */
-router.get('/vote', function(req, res, next) {
+router.get('/upvote', function(req, res, next) {
+  res.render('index', { title: 'Vote' });
+});
+
+/* POST upvote. */
+router.get('/downvote', function(req, res, next) {
   res.render('index', { title: 'Vote' });
 });
 
