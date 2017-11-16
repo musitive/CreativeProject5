@@ -20,7 +20,7 @@ angular.module('submission', [])
             "https://target.scene7.com/is/image/Target/15394670_Alt01?wid=520&hei=520&fmt=pjpeg"
         ]
 
-        $scope.makePost() = function() {
+        $scope.makePost = function() {
             person = document.getElementById("person").value;
             place = document.getElementById("place").value;
             object = document.getElementById("object").value;
