@@ -45,9 +45,7 @@
     <div class="container">
 
       <!-- Portfolio Item Heading -->
-      <h1 class="my-4">Fake Headline
-        <small></small>
-      </h1>
+      <h1 class="my-4">Fake Headline</h1>
 
       <!-- Portfolio Item Row -->
       <div class="row"  ng-app="submission" ng-controller="MainCtrl" id="thingie">
@@ -64,16 +62,10 @@
         </div>
 
         <div class="col-md-4">
-          <h3 class="my-3">Fake Article Preview</h3>
-          <p>{{str}}</p>
-          <h3 class="my-3">Project Details</h3>
-          <ul>
-            <li>Lorem Ipsum</li>
-            <li>Dolor Sit Amet</li>
-            <li>Consectetur</li>
-            <li>Adipiscing Elit</li>
-          </ul>
           <form ng-click="previewPost()">
+            <h3 class="my-3" style="text-align:center">Fake Article Preview</h3>
+            <h3><small>{{str}}</small></h3>
+            <img ng-src="{{img}}" style="width:100%;height:auto;"/>
             <button class="btn btn-info btn-md" id="prev_btn" type="submit">Preview Post</button>
           </form>  
         </div>
