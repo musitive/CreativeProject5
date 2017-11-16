@@ -27,7 +27,7 @@ router.get('/test', function(req, res, next) {
   });
 });
 
-/* POST submission. */
+/* TEST
 router.get('/test', function(req, res, next) {
   var headline = new Headline(req.body);
   headline.save(function(err, headline){
@@ -35,6 +35,7 @@ router.get('/test', function(req, res, next) {
     res.json(headline);
   });
 });
+*/
 
 /* GET headlines. */
 router.get('/headlines', function(req, res, next) {
