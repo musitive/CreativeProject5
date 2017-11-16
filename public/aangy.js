@@ -1,7 +1,7 @@
 angular.module('submission', [])
 .controller('MainCtrl', [
-    '$scope',
-    function($scope) {
+    '$scope', '$http',
+    function($scope, $http) {
         $scope.person;
         $scope.place;
         $scope.object;
