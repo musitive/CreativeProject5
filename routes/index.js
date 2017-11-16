@@ -13,7 +13,7 @@ router.get('/post', function(req, res, next) {
   res.sendFile('submit.html', { root: 'public' });
 });
 
-/* POST submission. */
+/* TEST 
 router.get('/test', function(req, res, next) {
   var newHeadline = Headline({
     title: 'Peter Quill',
@@ -26,16 +26,16 @@ router.get('/test', function(req, res, next) {
     res.json(newHeadline);
   });
 });
+*/
 
-/* TEST
-router.get('/test', function(req, res, next) {
+/* POST submission. */
+router.get('/headlines', function(req, res, next) {
   var headline = new Headline(req.body);
   headline.save(function(err, headline){
     if(err){ return next(err); }
     res.json(headline);
   });
 });
-*/
 
 /* GET headlines. */
 router.get('/headlines', function(req, res, next) {
