@@ -38,3 +38,7 @@ input {
   position: absolute;
   margin-bottom: 0;
 }
+
+#thingie {
+  margin-bottom: 50px;
+}
