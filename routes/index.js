@@ -58,14 +58,18 @@ router.get('/headlines/:headline', function(req, res) {
   res.json(req.headline);
 });
 
-/* POST upvote. */
-router.get('/upvote', function(req, res, next) {
-  res.render('index', { title: 'Vote' });
+router.put('/headlines/:headline/upvote', function(req, res, next) {
+  req.headline.upvote(function(err, headline){
+    if (err) { return next(err); }
+    res.json(headline);
+  });
 });
 
-/* POST upvote. */
-router.get('/downvote', function(req, res, next) {
-  res.render('index', { title: 'Vote' });
+router.put('/headlines/:headline/downvote', function(req, res, next) {
+  req.headline.downvote(function(err, headline){
+    if (err) { return next(err); }
+    res.json(headline);
+  });
 });
 
 module.exports = router;
