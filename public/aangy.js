@@ -19,8 +19,8 @@ angular.module('submission', [])
             "http://www.meridianpeakhypnosis.com/wp-content/uploads/2014/02/money-addiction.jpg",
             "https://target.scene7.com/is/image/Target/15394670_Alt01?wid=520&hei=520&fmt=pjpeg"
         ]
-        $scope.previewPost = function() {
-            console.log("preview time boi");
+
+        $scope.makePost() = function() {
             person = document.getElementById("person").value;
             place = document.getElementById("place").value;
             object = document.getElementById("object").value;
@@ -28,11 +28,26 @@ angular.module('submission', [])
             $scope.img = document.getElementById("img").value;
 
             $scope.str = person + " loves to " + verb + " " + object + " in " + place;
+        }
+
+        $scope.previewPost = function() {
+            console.log("preview time boi");
+            $scope.makePost();
             console.log($scope.str);        
         }
 
         $scope.submitPost = function() {
             console.log("submit time boi");
+            $scope.makePost();
+            console.log($scope.str);
+            var json = {
+                title: $scope.str,
+                image: $scope.img,
+                description: "String",
+            }
+            return $http.post('/headlines', json).success(function(data){
+                $scope.comments.push(data);
+            });
         }
 
         $scope.randomize = function() {
