@@ -46,6 +46,7 @@ angular.module('submission', [])
                 description: "String",
             }
             return $http.post('/headlines', json).success(function(data){
+                console.log("woah boi");
                 $scope.comments.push(data);
             });
         }
