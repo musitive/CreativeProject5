@@ -4,7 +4,7 @@ angular.module('posts', [])
   function($scope, $http){
     $scope.posts = [];
     $scope.getAll = function() {
-        return $http.get("ec2-18-220-136-196.us-east-2.compute.amazonaws.com:3005/headlines").success(function(data){
+        return $http.get("/headlines").success(function(data){
             console.log(data); 
             angular.copy(data, $scope.posts);
             });
