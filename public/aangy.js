@@ -14,7 +14,7 @@ angular.module('submission', [])
             place = document.getElementById("place").value;
             object = document.getElementById("object").value;
             verb = document.getElementById("verb").value;
-            img = document.getElementById("img").value;
+            $scope.img = document.getElementById("img").value;
 
             $scope.str = person + " loves to " + verb + " " + object + " in " + place;
             console.log($scope.str);        
