@@ -8,6 +8,17 @@ angular.module('submission', [])
         $scope.verb;
         $scope.img;
         $scope.str;
+        $scope.names = ["James", "John", "Robert", "Michael"]
+        $scope.places = ["Canada", "Mexico", "Italy", "France", "Greece"]
+        $scope.objects = ["dogs", "cats", "flowers", "money", "lamp shades"]
+        $scope.verbs = ["pet", "play with", "smell", "clean", "launch"]
+        $scope.images = [
+            "https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg",
+            "http://apopka-1x1yusplq.stackpathdns.com/wp-content/uploads/2017/10/persian-cats-and-kittens-1.jpg",
+            "https://static.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg",
+            "http://www.meridianpeakhypnosis.com/wp-content/uploads/2014/02/money-addiction.jpg",
+            "https://target.scene7.com/is/image/Target/15394670_Alt01?wid=520&hei=520&fmt=pjpeg"
+        ]
         $scope.previewPost = function() {
             console.log("preview time boi");
             person = document.getElementById("person").value;
@@ -26,6 +37,12 @@ angular.module('submission', [])
 
         $scope.randomize = function() {
             console.log("randomize");
+            var rand = Math.floor(Math.random() * $scope.names.length);
+            $scope.random_name = $scope.names[Math.floor(Math.random() * $scope.names.length)];
+            $scope.random_place = $scope.places[Math.floor(Math.random() * $scope.places.length)];
+            $scope.random_object = $scope.objects[rand];
+            $scope.random_verb = $scope.verbs[Math.floor(Math.random() * $scope.verbs.length)];
+            $scope.random_img = $scope.images[rand];
         }
     }
 ])
