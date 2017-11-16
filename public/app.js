@@ -4,11 +4,11 @@ angular.module('posts', [])
   function($scope, $http){
     $scope.posts = [];
     $scope.getAll = function() {
-        return $http.get("/headlines").success(function(data){
+        return $http.get('/headlines').success(function(data){
             console.log(data); 
             angular.copy(data, $scope.posts);
-            });
-        };
+        });
+    };
 /*
     $scope.incrementUpvotes = function(comment) {
       $scope.upvote(comment);
