@@ -29,7 +29,7 @@ router.get('/test', function(req, res, next) {
 */
 
 /* POST submission. */
-router.get('/headlines', function(req, res, next) {
+router.post('/headlines', function(req, res, next) {
   var headline = new Headline(req.body);
   headline.save(function(err, headline){
     if(err){ return next(err); }
