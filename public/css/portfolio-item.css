@@ -92,6 +92,7 @@ video{
 .post{
     margin-top: 10px;
   margin-bottom: 10px;
+  width: 100%;
 }
 textarea {
   padding: 10px;
