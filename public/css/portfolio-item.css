@@ -73,6 +73,7 @@ video{
     border-radius: 10px;
     outline:none;
   -webkit-transition:0.2s;
+  padding: 10px;
 }
 .headline:focus, .description:focus{
     border-color: black;
@@ -80,3 +81,4 @@ video{
 .description{
     height: 230px;
 }
+
