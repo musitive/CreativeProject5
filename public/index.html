@@ -57,8 +57,8 @@
         </div>
         <div class="col-md-4">
           <h3 class="my-3">Our Policy</h3>
-            <p>Our site takes the very best Fake News, and puts it all together in one site. Our policy is simple, if it is truthfull, creditable, or honest, we DON'T want it here. All we need is for you reveal the Fake News, click <span><a href="submit.html">Create Post</a></span> to get started</p>
-            <video width="320" height="240" controls>
+            <p>Our site takes the very best Fake News, and puts it all together in one site. Our policy is simple, if it is truthful, creditable, or honest, we DON'T want it here. All we need is for you reveal the Fake News, click <span><a href="submit.html">Create Post</a></span> to get started</p>
+            <video width="400" height="300" controls>
                 <source src="fake_video-1.mp4" type="video/mp4">
                 Your browser does not support this video
             </video>
@@ -73,7 +73,7 @@
       <div class="row">
         <div class="col-md-3 col-sm-6 mb-4" ng-repeat="fakeNews in posts | orderBy: '-upvotes'">
             
-            <div id="fakeNewsPic"><h5>{{fakeNews.title}}</h5>
+            <div id="fakeNewsPic"><h3>{{fakeNews.title}}</h3>
             </div>
             
             <img class="img-fluid" src={{fakeNews.image}} alt="">
