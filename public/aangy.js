@@ -27,7 +27,7 @@ angular.module('submission', [])
         }*/
 
         $scope.makePost = function() {
-            $scope.headline = $scope.person + " " + $scope.verb + " " + $scope.object + " " + " in " + $scope.place;
+            $scope.headline = $scope.random_name + " " + $scope.random_verb + " " + $scope.random_object + " " + " in " + $scope.random_place;
             $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
         }
 
