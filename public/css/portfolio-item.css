@@ -42,3 +42,23 @@ input {
 #thingie {
   margin-bottom: 50px;
 }
+
+#trump{
+  margin-top: 50px;
+}
+#fakeNewsPic{
+  text-align: center;
+}
+#like{
+  width:30px;
+}
+#dislike{
+  width:30px;
+}
+.like_dislike{
+  text-align: center;
+}
+video{
+  border-radius: 10px;
+  border: black 2px;
+}
