@@ -65,6 +65,7 @@ input:focus{
 }
 .like_dislike{
   text-align: center;
+  margin-top: 7px;
 }
 video{
   border-radius: 10px;
