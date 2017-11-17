@@ -114,17 +114,46 @@ angular.module('submission', [])
                     },
         }
         $scope.names = ["donald", "kim", "taylor", "obama", "anderson", "fox", "tim", "sundar", "mark", "kanye"]
-        $scope.places = ["Canada", "Mexico", "Italy", "France", "Greece"]
-        $scope.objects = ["dogs", "cats", "flowers", "money", "lamp shades"]
+        $scope.places = ["Afghanistan", "Albania", "Algeria", "Antarctica", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan", "Bahamas",
+                        "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan", "Bolivia",
+                        "Bosnia and Herzegowina", "Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory",
+                        "Brunei Darussalam", "Bulgaria", "Burkina Faso", "Burundi", "Cambodia", "Cameroon", "Canada", "Cape Verde",
+                        "Cayman Islands", "Central African Republic", "Chad", "Chile", "China", "Christmas Island",
+                        "Cocos (Keeling) Islands", "Colombia", "Comoros", "Congo",
+                        "Cook Islands", "Costa Rica", "Cote d'Ivoire", "Croatia (Hrvatska)", "Cuba", "Cyprus",
+                        "Czech Republic", "Denmark", "Djibouti", "Dominica", "Dominican Republic", "East Timor",
+                        "Ecuador", "Egypt", "El Salvador", "Equatorial Guinea", "Eritrea", "Estonia", "Ethiopia",
+                        "Falkland Islands", "Faroe Islands", "Fiji", "Finland", "France", "France Metropolitan",
+                        "French Guiana", "French Polynesia", "French Southern Territories", "Gabon", "Gambia", "Georgia", "Germany",
+                        "Ghana", "Gibraltar", "Greece", "Greenland", "Grenada", "Guadeloupe", "Guam", "Guatemala", "Guinea",
+                        "Guinea-Bissau", "Guyana", "Haiti", "Heard and Mc Donald Islands", "the Vatican",
+                        "Honduras", "Hong Kong", "Hungary", "Iceland", "India", "Indonesia", "Iran",
+                        "Iraq", "Ireland", "Israel", "Italy", "Jamaica", "Japan", "Jordan", "Kazakhstan", "Kenya", "Kiribati",
+                        "South Korea", "North Korea", "Kuwait", "Kyrgyzstan", "Lao, People's Democratic Republic", "Latvia",
+                        "Lebanon", "Lesotho", "Liberia", "Libyan Arab Jamahiriya",
+                        "Liechtenstein", "Lithuania", "Luxembourg", "Macau", "Madagascar",
+                        "Malawi", "Malaysia", "Maldives", "Mali", "Malta", "Marshall Islands", "Martinique", "Mauritania", "Mauritius",
+                        "Mayotte", "Mexico", "Monaco", "Mongolia", "Montserrat",
+                        "Morocco", "Mozambique", "Myanmar", "Namibia", "Nauru", "Nepal", "Netherlands", "Netherlands Antilles",
+                        "New Caledonia", "New Zealand", "Nicaragua", "Niger", "Nigeria", "Niue", "Norfolk Island",
+                        "Northern Mariana Islands", "Norway", "Oman", "Pakistan", "Palau", "Panama", "Papua New Guinea", "Paraguay",
+                        "Peru", "Philippines", "Pitcairn", "Poland", "Portugal", "Puerto Rico", "Qatar", "Reunion", "Romania",
+                        "Russian Federation", "Rwanda", "Saint Kitts and Nevis", "Saint Lucia", "Saint Vincent and the Grenadines",
+                        "Samoa", "San Marino", "Sao Tome and Principe", "Saudi Arabia", "Senegal", "Seychelles", "Sierra Leone", "Singapore",
+                        "Slovakia (Slovak Republic)", "Slovenia", "Solomon Islands", "Somalia", "South Africa",
+                        "South Georgia and the South Sandwich Islands", "Spain", "Sri Lanka", "St. Helena", "St. Pierre and Miquelon",
+                        "Sudan", "Suriname", "Svalbard and Jan Mayen Islands", "Swaziland", "Sweden", "Switzerland", "Syrian Arab Republic",
+                        "Taiwan, Province of China", "Tajikistan", "Thailand", "Togo", "Tokelau", "Tonga",
+                        "Trinidad and Tobago", "Tunisia", "Turkey", "Turkmenistan", "Turks and Caicos Islands", "Tuvalu", "Uganda", "Ukraine",
+                        "United Arab Emirates", "United Kingdom", "United States"]
+        $scope.objects = ["dogs", "cats", "flowers", "money", "lamp shades", "Donald Trump", "Melania Trump", "Barack Obama", "Taylor Swift",
+                            "McDonalds", "burger", "civilians", "desserts", "Walmart", "Google", "Facebook", "Apple", "Microsoft", "the Pope",
+                            "Kanye West", "Kevin Spacey", "Tom Cruise", "Star Wars", "Darth Vader", "private island", "car", "house", "White House",
+                            "Empire State Building", "Statue of Liberty", "Doritos", "BYU students", "Bernie Sanders", "Hillary Clinton", "fake news"]
         $scope.verbs = ["pets", "plays with", "smells", "cleans", "launches", "deceives", "preserves", "kills", "kisses", "forces",
                         "passes", "sins against", "run", "stabs", "knives", "trumps", "devours", "captures", "accuses", "destroys",
-                        "laughs at", "forbids", "contemplates",]
-        $scope.images = [
-            "https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg",
-            "http://apopka-1x1yusplq.stackpathdns.com/wp-content/uploads/2017/10/persian-cats-and-kittens-1.jpg",
-            "https://static.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg",
-            "http://www.meridianpeakhypnosis.com/wp-content/uploads/2014/02/money-addiction.jpg",
-            "https://target.scene7.com/is/image/Target/15394670_Alt01?wid=520&hei=520&fmt=pjpeg"
-        ]
+                        "laughs at", "forbids", "contemplates", "eats", "offends", "triggers", "cancels", "distrupts", "enjoys",
+                        "eliminates", "trashes", "insults", "pleases", "generates", "compliments", "battles", "dresses up as", "wears",
+                        "buys", "spreads", "encourages", "pressures", "leads on", "dedicates"]
     }
 ])
