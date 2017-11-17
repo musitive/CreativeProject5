@@ -7,6 +7,7 @@ angular.module('submission', [])
         $scope.random_object = "";
         $scope.random_verb = "";
         $scope.random_img = "http://ak9.picdn.net/shutterstock/videos/8920699/thumb/2.jpg";
+        $scope.img = "http://ak9.picdn.net/shutterstock/videos/8920699/thumb/2.jpg";
         $scope.headline = "";
         $scope.description = "";
         
