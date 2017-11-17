@@ -21,8 +21,13 @@ angular.module('submission', [])
             "https://target.scene7.com/is/image/Target/15394670_Alt01?wid=520&hei=520&fmt=pjpeg"
         ]
 
-        $scope.makePost = function() {
+        /*$scope.makePost = function() {
             $scope.headline = $scope.person + " loves to " + $scope.verb + " " + $scope.object + " in " + $scope.place;
+            $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
+        }*/
+
+        $scope.makePost = function() {
+            $scope.headline = $scope.person + " " + $scope.verb + " " + $scope.object + " " + " in " + $scope.place;
             $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
         }
 
