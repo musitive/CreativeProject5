@@ -22,12 +22,6 @@ angular.module('submission', [])
         ]
 
         $scope.makePost = function() {
-            $scope.person = document.getElementById("person").value;
-            $scope.place = document.getElementById("place").value;
-            $scope.object = document.getElementById("object").value;
-            $scope.verb = document.getElementById("verb").value;
-            $scope.img = document.getElementById("img").value;
-
             $scope.headline = $scope.person + " loves to " + $scope.verb + " " + $scope.object + " in " + $scope.place;
             $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
         }
