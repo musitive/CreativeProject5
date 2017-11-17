@@ -2,11 +2,11 @@ angular.module('submission', [])
 .controller('MainCtrl', [
     '$scope', '$http',
     function($scope, $http) {
-        $scope.person = "";
-        $scope.place = "";
-        $scope.object = "";
-        $scope.verb = "";
-        $scope.img = "";
+        $scope.random_name = "";
+        $scope.random_place = "";
+        $scope.random_object = "";
+        $scope.random_verb = "";
+        $scope.random_img = "";
         $scope.headline = "";
         $scope.description = "";
         $scope.names = ["James", "John", "Robert", "Michael"]
@@ -20,12 +20,7 @@ angular.module('submission', [])
             "http://www.meridianpeakhypnosis.com/wp-content/uploads/2014/02/money-addiction.jpg",
             "https://target.scene7.com/is/image/Target/15394670_Alt01?wid=520&hei=520&fmt=pjpeg"
         ]
-
-        /*$scope.makePost = function() {
-            $scope.headline = $scope.person + " loves to " + $scope.verb + " " + $scope.object + " in " + $scope.place;
-            $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
-        }*/
-
+        
         $scope.makePost = function() {
             $scope.headline = $scope.random_name + " " + $scope.random_verb + " " + $scope.random_object + " " + " in " + $scope.random_place;
             $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
@@ -43,11 +38,10 @@ angular.module('submission', [])
                     alert("Please finish your FAKE headline");
                 } else {
                 console.log("submit time boi");
-                console.log($scope.headline);
                 var json = {
                     title: $scope.headline,
-                    image: $scope.img,
-                    description: $scope.description,
+                    image: $scope.random_img,
+                    description: $scope.description
                 }
                 return $http.post('/headlines', json).success(function(data){
                     console.log("woah boi");
