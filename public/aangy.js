@@ -16,12 +16,6 @@ angular.module('submission', [])
             $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
         }
 
-        $scope.previewPost = function() {
-            console.log("preview time boi");
-            $scope.makePost();
-            console.log($scope.headline);        
-        }
-
         $scope.submitPost = function() {
             if ($scope.headline == "" ||
                 $scope.description == "") {
@@ -43,15 +37,32 @@ angular.module('submission', [])
         $scope.randomize = function() {
             console.log("randomize");
             var rand = Math.floor(Math.random() * $scope.names.length);
-            $scope.random_name = $scope.names[Math.floor(Math.random() * $scope.names.length)];
+            var key = $scope.names[Math.floor(Math.random() * $scope.names.length)];
+            $scope.random_name = $scope.things[key].name;
             $scope.random_place = $scope.places[Math.floor(Math.random() * $scope.places.length)];
-            $scope.random_object = $scope.objects[rand];
+            $scope.random_object = $scope.objects[Math.floor(Math.random() * $scope.objects.length)];
             $scope.random_verb = $scope.verbs[Math.floor(Math.random() * $scope.verbs.length)];
-            $scope.random_img = $scope.images[rand];
+            $scope.random_img = $scope.images[key].images[Math.floor(Math.random() * $scope.images[key].images.length)];
             $scope.makePost();
         }
 
-        $scope.names = ["Donald Trump", "Barack Obama", "Hillary Clinton", "Michael"]
+        $scope.things = {
+            "donald": {
+                name: "Donald Trump",
+                images: [
+                    "https://timedotcom.files.wordpress.com/2017/02/trump8.jpg?quality=85",
+                    "http://cdn.cnn.com/cnnnext/dam/assets/170822235920-08-trump-phoenix-0822-large-169.jpg"
+                ]
+            },
+            "kim": {
+                name: "Kim Jong-un",
+                images: [
+                    "http://i.telegraph.co.uk/multimedia/archive/02701/kim_2701423b.jpg",
+                    "https://cdn.images.dailystar.co.uk/dynamic/1/photos/901000/620x/North-Korea-nuclear-war-621566.jpg"
+                ]
+            }
+        }
+        $scope.names = ["donald", "kim"]
         $scope.places = ["Canada", "Mexico", "Italy", "France", "Greece"]
         $scope.objects = ["dogs", "cats", "flowers", "money", "lamp shades"]
         $scope.verbs = ["pets", "plays with", "smells", "cleans", "launches"]
