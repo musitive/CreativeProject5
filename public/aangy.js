@@ -9,20 +9,9 @@ angular.module('submission', [])
         $scope.random_img = "";
         $scope.headline = "";
         $scope.description = "";
-        $scope.names = ["James", "John", "Robert", "Michael"]
-        $scope.places = ["Canada", "Mexico", "Italy", "France", "Greece"]
-        $scope.objects = ["dogs", "cats", "flowers", "money", "lamp shades"]
-        $scope.verbs = ["pets", "plays with", "smells", "cleans", "launches"]
-        $scope.images = [
-            "https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg",
-            "http://apopka-1x1yusplq.stackpathdns.com/wp-content/uploads/2017/10/persian-cats-and-kittens-1.jpg",
-            "https://static.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg",
-            "http://www.meridianpeakhypnosis.com/wp-content/uploads/2014/02/money-addiction.jpg",
-            "https://target.scene7.com/is/image/Target/15394670_Alt01?wid=520&hei=520&fmt=pjpeg"
-        ]
         
         $scope.makePost = function() {
-            $scope.headline = $scope.random_name + " " + $scope.random_verb + " " + $scope.random_object + " in " + $scope.random_place;
+            $scope.headline = $scope.random_name + " " + $scope.random_verb.toUpperCase(); + " " + $scope.random_object + " in " + $scope.random_place;
             $scope.img = $scope.random_img;
             $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
         }
@@ -61,5 +50,17 @@ angular.module('submission', [])
             $scope.random_img = $scope.images[rand];
             $scope.makePost();
         }
+
+        $scope.names = ["Donald Trump", "Barack Obama", "Hillary Clinton", "Michael"]
+        $scope.places = ["Canada", "Mexico", "Italy", "France", "Greece"]
+        $scope.objects = ["dogs", "cats", "flowers", "money", "lamp shades"]
+        $scope.verbs = ["pets", "plays with", "smells", "cleans", "launches"]
+        $scope.images = [
+            "https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg",
+            "http://apopka-1x1yusplq.stackpathdns.com/wp-content/uploads/2017/10/persian-cats-and-kittens-1.jpg",
+            "https://static.pexels.com/photos/39517/rose-flower-blossom-bloom-39517.jpeg",
+            "http://www.meridianpeakhypnosis.com/wp-content/uploads/2014/02/money-addiction.jpg",
+            "https://target.scene7.com/is/image/Target/15394670_Alt01?wid=520&hei=520&fmt=pjpeg"
+        ]
     }
 ])
