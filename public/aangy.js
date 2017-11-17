@@ -26,11 +26,11 @@ angular.module('submission', [])
                     image: $scope.random_img,
                     description: $scope.description
                 }
-                return $http.post('/headlines', json).success(function(data){
+                alert("Your article is now live!  Check the home page or submit a new article!");                
+                /*return $http.post('/headlines', json).success(function(data){
                     console.log("woah boi");
                     $scope.comments.push(data);
-                    alert("Your article is now live!  Check the home page or submit a new article!");
-                });
+                });*/
             }
         }
 
