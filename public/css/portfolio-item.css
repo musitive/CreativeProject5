@@ -21,33 +21,34 @@ input {
   border-radius: 8px;
   border: solid 1px grey;
   padding: 4px;
+  outline: none;
+  -webkit-transition:0.7s;
+}
+input:focus{
+    border-color: black;
 }
 
 #submit_btn {
   margin-left: 1%;
-  width: 48%;
-  border-radius: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 #prev_btn {
   width: 100%;
-  border-radius: 10px;
 }
 
 .div1 {
   height: 42px;
 }
-
 .div3{
   width: 100%;
   position: absolute;
   margin-bottom: 0;
 }
-
 #thingie {
   margin-bottom: 50px;
 }
-
 #trump{
   margin-top: 50px;
 }
@@ -66,4 +67,16 @@ input {
 video{
   border-radius: 10px;
   border: black 2px;
+}
+.headline, .description{
+    width: 100%;
+    border-radius: 10px;
+    outline:none;
+  -webkit-transition:0.2s;
+}
+.headline:focus, .description:focus{
+    border-color: black;
+}
+.description{
+    height: 230px;
 }
