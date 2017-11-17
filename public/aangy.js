@@ -59,6 +59,7 @@ angular.module('submission', [])
             $scope.random_object = $scope.objects[rand];
             $scope.random_verb = $scope.verbs[Math.floor(Math.random() * $scope.verbs.length)];
             $scope.random_img = $scope.images[rand];
+            $scope.makePost();
         }
     }
 ])
