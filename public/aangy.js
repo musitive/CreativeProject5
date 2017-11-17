@@ -2,11 +2,11 @@ angular.module('submission', [])
 .controller('MainCtrl', [
     '$scope', '$http',
     function($scope, $http) {
-        $scope.person;
-        $scope.place;
-        $scope.object;
-        $scope.verb;
-        $scope.img;
+        $scope.person = "";
+        $scope.place = "";
+        $scope.object = "";
+        $scope.verb = "";
+        $scope.img = "";
         $scope.headline;
         $scope.description;
         $scope.names = ["James", "John", "Robert", "Michael"]
@@ -42,7 +42,8 @@ angular.module('submission', [])
             if ($scope.person == "" ||
                 $scope.object == "" ||
                 $scope.verb == "" ||
-                $scope.img == "") {
+                $scope.img == "" ||
+                $scope.place == "") {
                 alert("Please finish your FAKE headline");
             } else {
                 console.log("submit time boi");
