@@ -57,8 +57,8 @@
           <h3><small>Verb:</small></h3><input id="verb" type="text" placeholder="Enter a random verb" ng-model="random_verb"/><br><br>
           <h3><small>Image URL:</small></h3><input id="img" type="text" placeholder="Enter an image URL for your article thumbnail" ng-model="random_img"/><br><br>
           <br>
+          <!--<button class="btn btn-info btn-md" id="prev_btn" type="submit">Preview Post</button>-->
           <button ng-click="randomize()" class="btn btn-danger btn-md" id="submit_btn" type="submit">Randomize the Fields!</button>
-          <button ng-click="submitPost()" class="btn btn-success btn-md" id="submit_btn" type="submit">Submit Post</button>
         </div>
 
         <div class="col-md-4">
@@ -69,7 +69,7 @@
             <br><br>
             <textarea class="description">{{description}}</textarea>
             <br><br>
-            <button class="btn btn-info btn-md" id="prev_btn" type="submit">Preview Post</button>
+            <button ng-click="submitPost()" class="btn btn-success btn-md" id="submit_btn" type="submit">Submit Post</button>
           </form>  
         </div>
 
