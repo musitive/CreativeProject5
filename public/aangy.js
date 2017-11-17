@@ -154,6 +154,6 @@ angular.module('submission', [])
                         "passes", "sins against", "run", "stabs", "knives", "trumps", "devours", "captures", "accuses", "destroys",
                         "laughs at", "forbids", "contemplates", "eats", "offends", "triggers", "cancels", "distrupts", "enjoys",
                         "eliminates", "trashes", "insults", "pleases", "generates", "compliments", "battles", "dresses up as", "wears",
-                        "buys", "spreads", "encourages", "pressures", "leads on", "dedicates"]
+                        "buys", "spreads", "encourages", "pressures", "leads on", "dedicates", "fires"]
     }
 ])
