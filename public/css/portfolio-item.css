@@ -32,6 +32,7 @@ input:focus{
   margin-left: 1%;
   width: 100%;
   text-align: center;
+  margin-bottom: 10px;
 }
 
 #prev_btn {
@@ -88,4 +89,7 @@ video{
 .post{
     margin-top: 10px;
   margin-bottom: 10px;
+}
+textarea {
+  padding: 10px;
 }
