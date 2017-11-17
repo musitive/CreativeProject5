@@ -7,12 +7,12 @@ angular.module('submission', [])
         $scope.object = "";
         $scope.verb = "";
         $scope.img = "";
-        $scope.headline;
-        $scope.description;
+        $scope.headline = "";
+        $scope.description = "";
         $scope.names = ["James", "John", "Robert", "Michael"]
         $scope.places = ["Canada", "Mexico", "Italy", "France", "Greece"]
         $scope.objects = ["dogs", "cats", "flowers", "money", "lamp shades"]
-        $scope.verbs = ["pet", "play with", "smell", "clean", "launch"]
+        $scope.verbs = ["pets", "plays with", "smells", "cleans", "launches"]
         $scope.images = [
             "https://i.ytimg.com/vi/SfLV8hD7zX4/maxresdefault.jpg",
             "http://apopka-1x1yusplq.stackpathdns.com/wp-content/uploads/2017/10/persian-cats-and-kittens-1.jpg",

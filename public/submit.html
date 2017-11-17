@@ -64,9 +64,12 @@
         <div class="col-md-4">
           <form ng-click="previewPost()">
             <h3 class="my-3" style="text-align:center">Fake Article Preview</h3>
-            <h3><small>{{str}}</small></h3>
+            <h3><small><input class="headline" value="{{headline}}"/></small></h3>
             <img ng-src="{{img}}" style="width:100%;height:auto;"/>
-            <br>{{description}}<br><button class="btn btn-info btn-md" id="prev_btn" type="submit">Preview Post</button>
+            <br><br>
+            <input class="description" value="{{description}}"/>
+            <br><br>
+            <button class="btn btn-info btn-md" id="prev_btn" type="submit">Preview Post</button>
           </form>  
         </div>
 
