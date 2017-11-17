@@ -64,7 +64,7 @@ angular.module('submission', [])
                 ]
             },
             "kim": {
-                name: "Kim Jong-un",
+                name: "Kim Jong-Un",
                 images: [
                     "http://i.telegraph.co.uk/multimedia/archive/02701/kim_2701423b.jpg",
                     "https://cdn.images.dailystar.co.uk/dynamic/1/photos/901000/620x/North-Korea-nuclear-war-621566.jpg",
@@ -250,9 +250,10 @@ angular.module('submission', [])
                             "Disney", "Russia", "Vladimir Putin", "Wendy's", "University of Utah", "Star Trek", "Boy Scouts of America",
                             "Stalin", "Pewdiepie", "children", "iPhone", "Twitter following", "Obi Wan Kenobi", "Sport's Car", "Imagine Dragons",
                             "Johnny Depp", "database", "government website", "gun laws", "the poor", "the rich", "the 1%", "Bernie Sanders",
-                            "Rick and Morty Fans", "the CIA", "the FBI", ]
+                            "Rick and Morty Fans", "the CIA", "the FBI", "Buzzfeed", "The Wall Street Journal", "The New York Times", "Batman",
+                            "Emma Stone"]
         $scope.verbs = ["pets", "plays with", "smells", "cleans", "launches", "deceives", "preserves", "kills", "kisses", "forces",
-                        "passes", "sins against", "run", "stabs", "knives", "trumps", "devours", "captures", "accuses", "destroys",
+                        "passes", "sins against", "runs", "stabs", "knives", "trumps", "devours", "captures", "accuses", "destroys",
                         "laughs at", "forbids", "eats", "offends", "triggers", "cancels", "distrupts", "enjoys",
                         "eliminates", "trashes", "insults", "pleases", "generates", "compliments", "battles", "dresses up as", "wears",
                         "buys", "spreads", "encourages", "pressures", "leads on", "dedicates", "fires", "lies about", "trafficks", "sells",
@@ -261,8 +262,10 @@ angular.module('submission', [])
                         "battles", "fights with", "starts drama with", "approves of", "violates agreement with", "blesses", "helps", "creates",
                         "resurrects", "eats"]
         $scope.headers = ["Sources reveal the SHOCKING information that ", "BREAKING NEWS - ", "You would have NEVER guessed that ",
-                            "LEAKED - ", "SCANDALOUS information regarding the fact that"];
+                            "LEAKED - ", "SCANDALOUS information regarding the fact that ", "Did you know that ", "It's truly frustrating that",
+                            "Republicans are upset that ", "Democrats are upset that ", "Millenials can't believe that "];
         $scope.footers = ["What will happen next?", "Upvote to show your support.", "We demand answers.", "Will anyone truly understand?",
-                            "They have yet to respond.", "How much longer can they get away with it?"];
+                            "They have yet to respond.", "How much longer can they get away with it?", "NO ONE believes it.", "Not surprisingly, this is the second time this year.",
+                            "When will they actually listen to us?", "Could this be part of a bigger scheme?"];
     }
 ])
