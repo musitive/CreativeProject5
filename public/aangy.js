@@ -7,7 +7,8 @@ angular.module('submission', [])
         $scope.object;
         $scope.verb;
         $scope.img;
-        $scope.str;
+        $scope.headline;
+        $scope.description;
         $scope.names = ["James", "John", "Robert", "Michael"]
         $scope.places = ["Canada", "Mexico", "Italy", "France", "Greece"]
         $scope.objects = ["dogs", "cats", "flowers", "money", "lamp shades"]
@@ -27,28 +28,36 @@ angular.module('submission', [])
             verb = document.getElementById("verb").value;
             $scope.img = document.getElementById("img").value;
 
-            $scope.str = person + " loves to " + verb + " " + object + " in " + place;
+            $scope.headline = person + " loves to " + verb + " " + object + " in " + place;
+            $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
         }
 
         $scope.previewPost = function() {
             console.log("preview time boi");
             $scope.makePost();
-            console.log($scope.str);        
+            console.log($scope.headline);        
         }
 
         $scope.submitPost = function() {
-            console.log("submit time boi");
-            $scope.makePost();
-            console.log($scope.str);
-            var json = {
-                title: $scope.str,
-                image: $scope.img,
-                description: "String",
+            if ($scope.person == "" ||
+                $scope.object == "" ||
+                $scope.verb == "" ||
+                $scope.img == "") {
+                alert("Please finish your FAKE headline");
+            } else {
+                console.log("submit time boi");
+                $scope.makePost();
+                console.log($scope.headline);
+                var json = {
+                    title: $scope.headline,
+                    image: $scope.img,
+                    description: $scope.description,
+                }
+                return $http.post('/headlines', json).success(function(data){
+                    console.log("woah boi");
+                    $scope.comments.push(data);
+                });
             }
-            return $http.post('/headlines', json).success(function(data){
-                console.log("woah boi");
-                $scope.comments.push(data);
-            });
         }
 
         $scope.randomize = function() {
