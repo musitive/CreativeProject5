@@ -216,10 +216,58 @@ angular.module('submission', [])
                     "http://img4.looper.com/img/gallery/why-hollywood-wont-cast-hayden-christensen-anymore/whats-next-for-hayden-christensen-1482168495.jpg",
                     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7wvV-J92MbeMKPmkt-IDVyhPyGhDTleP_0LV6kpnvXrTgUPNl"
                 ]
+            },
+            "mike": {
+                name: "Mike Pence",
+                images: [
+                    "https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_2102,w_3738,x_0,y_0/dpr_2.0/c_limit,w_740/fl_lossy,q_auto/v1492111522/articles/2016/07/15/mike-pence-trump-s-likely-vp-pick-is-too-anti-gay-even-for-republicans/160714-michaelson-mike-pence-tease_imhr9j",
+                    "https://media.newyorker.com/photos/59097d9b1c7a8e33fb39060e/4:3/w_960,c_limit/Borowitz-Letter-from-Mike-Pence.jpg",
+                    "https://media.salon.com/2016/09/mike_pence11-620x412.jpg",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzzS9ARd-fnzeHMgPgFX1OJZeW9uANWJeVgDQyEvMzJGInujSAkQ",
+                    "http://media.advance.net/politics_news_national_desk/photo/mike-pence-127ef1b4df4ee8c5.jpg"
+                ]
+            },
+            "biden": {
+                name: "Joe Biden",
+                images: [
+                    "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/06/01/104503727-GettyImages-687902530-joe-biden.jpg?v=1496316551",
+                    "https://media1.s-nbcnews.com/j/MSNBC/Components/Video/201711/joe-biden-today-interview-tease-001-171113__883275.today-inline-vid-featured-desktop.jpg",
+                    "https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2017/11/13/104838696-GettyImages-869035584-joe-biden.jpg?v=1510586207",
+                    "http://pixel.nymag.com/imgs/daily/intelligencer/2015/02/17/17-joe-biden-hillary-clinton.w710.h473.2x.jpg",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGf1liHPZ3Jphzht7YxkmZAdVmfolsDJH0-cqx5ooK0zvgpp4RVw"
+                ]
+            },
+            "perry": {
+                name: "Katy Perry",
+                images: [
+                    "https://media.glamour.com/photos/591c9a13047fb461a59c1ca2/master/pass/katy-perry-pixie.jpg",
+                    "https://pbs.twimg.com/media/DCsl0D_VYAEllGU.jpg",
+                    "https://upload.wikimedia.org/wikipedia/commons/c/c2/Katy_Perry_UNICEF_2012.jpg",
+                    "https://peopledotcom.files.wordpress.com/2017/06/katy-perry6.jpg?w=2000&h=1333"
+                ]
+            },
+            "george": {
+                name: "George Lucas",
+                images: [
+                    "http://www.filmdumpster.com/wp-content/uploads/2015/12/george-lucas_0.jpg",
+                    'https://specials-images.forbesimg.com/imageserve/59d679e44bbe6f37dda00f43/416x416.jpg?background=000000&cropX1=424&cropX2=1658&cropY1=116&cropY2=1350',
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC0aNW7UOSASXtCjAYfflBv40g4n2akz85Uyh6iLPPT2A8JLAn",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCBQvF9t0bbvCsi1WEAMzv5k0Iwd7EA-jqlCf4D78AfyAE-mYyaQ"
+                ]
+            },
+            "cage": {
+                name: "Nicolas Cage",
+                images: [
+                    "https://img.buzzfeed.com/buzzfeed-static/static/2014-01/campaign_images/webdr06/7/14/50-reasons-why-nicolas-cage-is-the-greatest-human-1-5571-1389124720-1_big.jpg",
+                    "https://cdn.empireonline.com/jpg/80/0/0/1200/675/0/0/0/0/0/0/0/c/articles/59b858d7b43fedb81e7262aa/nicolas-cage.jpg",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ74Zl952ycxhiWhBszyJ_OMuLWWSaQo-leR7SecDCtIzpoyGNI",
+                    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2qtew-Kjfy4FONiYHnrN3pRX1VR6OhTFxcKIWvPlYtsc7TRZRmw",
+                    "https://pmcdeadline2.files.wordpress.com/2016/11/nicolas-cage.jpg?w=605"
+                ]
             }
         }
         $scope.names = ["donald", "kim", "taylor", "obama", "anderson", "fox", "tim", "sundar", "mark", "kanye", "clinton", "putin", "kar", "pope",
-                        "sanders", "hayden"]
+                        "sanders", "hayden", "biden", "biden", "emma", "george", "cage"]
         $scope.places = ["Afghanistan", "Albania", "Algeria", "Antarctica", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan",
                         "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan",
                         "Bolivia","Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory", "Bulgaria", "Burkina Faso",
@@ -251,7 +299,7 @@ angular.module('submission', [])
                             "Stalin", "Pewdiepie", "children", "iPhone", "Twitter following", "Obi Wan Kenobi", "Sport's Car", "Imagine Dragons",
                             "Johnny Depp", "database", "government website", "gun laws", "the poor", "the rich", "the 1%", "Bernie Sanders",
                             "Rick and Morty Fans", "the CIA", "the FBI", "Buzzfeed", "The Wall Street Journal", "The New York Times", "Batman",
-                            "Emma Stone"]
+                            "Emma Stone", "fans"]
         $scope.verbs = ["pets", "plays with", "smells", "cleans", "launches", "deceives", "preserves", "kills", "kisses", "forces",
                         "passes", "sins against", "runs", "stabs", "knives", "trumps", "devours", "captures", "accuses", "destroys",
                         "laughs at", "forbids", "eats", "offends", "triggers", "cancels", "distrupts", "enjoys",
@@ -260,7 +308,7 @@ angular.module('submission', [])
                         "marries", "tweets at", "misgenders", "loves", "assualts", "hacks", "steals info from", "blushes in front of", "dies",
                         "defeats", "challenges", "glorifies", "bans", "hits", "endorces", "attacks", "meets", "grieves over death of",
                         "battles", "fights with", "starts drama with", "approves of", "violates agreement with", "blesses", "helps", "creates",
-                        "resurrects", "eats", "is dating", "is in an affair with", "is cheating with"]
+                        "resurrects", "eats", "is dating", "is in an affair with", "is cheating with", "defends", "scares off", "appreciates"]
         $scope.headers = ["Sources reveal the SHOCKING information that ", "BREAKING NEWS - ", "You would have NEVER guessed that ",
                             "LEAKED - ", "SCANDALOUS information regarding the fact that ", "Did you know that ", "It's truly frustrating that ",
                             "Republicans are upset that ", "Democrats are upset that ", "Millenials can't believe that ", "NO ONE expected that "];
