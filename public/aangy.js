@@ -39,6 +39,7 @@ angular.module('submission', [])
         }
 
         $scope.submitPost = function() {
+            $scope.makePost();
             if ($scope.person == "" ||
                 $scope.object == "" ||
                 $scope.verb == "" ||
@@ -47,7 +48,6 @@ angular.module('submission', [])
                 alert("Please finish your FAKE headline");
             } else {
                 console.log("submit time boi");
-                $scope.makePost();
                 console.log($scope.headline);
                 var json = {
                     title: $scope.headline,
