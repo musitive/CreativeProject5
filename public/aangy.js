@@ -259,8 +259,10 @@ angular.module('submission', [])
                         "marries", "tweets at", "misgenders", "loves", "assualts", "hacks", "steals info from", "blushes in front of", "dies",
                         "defeats", "challenges", "glorifies", "bans", "hits", "endorces", "attacks", "meets", "grieves over death of",
                         "battles", "fights with", "starts drama with", "approves of", "violates agreement with", "blesses", "helps", "creates",
-                        "resurrects"]
-        $scope.headers = ["Sources reveal the SHOCKING information that ", "BREAKING NEWS - "];
-        $scope.footers = ["What will happen next?"];
+                        "resurrects", "eats"]
+        $scope.headers = ["Sources reveal the SHOCKING information that ", "BREAKING NEWS - ", "You would have NEVER guessed that ",
+                            "LEAKED - ", "SCANDALOUS information regarding the fact that"];
+        $scope.footers = ["What will happen next?", "Upvote to show your support.", "We demand answers.", "Will anyone truly understand?",
+                            "They have yet to respond.", "How much longer can they get away with it?"];
     }
 ])
