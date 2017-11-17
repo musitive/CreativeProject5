@@ -22,7 +22,8 @@ angular.module('submission', [])
         ]
         
         $scope.makePost = function() {
-            $scope.headline = $scope.random_name + " " + $scope.random_verb + " " + $scope.random_object + " " + " in " + $scope.random_place;
+            $scope.headline = $scope.random_name + " " + $scope.random_verb + " " + $scope.random_object + " in " + $scope.random_place;
+            $scope.img = $scope.random_img;
             $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
         }
 
