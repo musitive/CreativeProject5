@@ -260,12 +260,13 @@ angular.module('submission', [])
                         "marries", "tweets at", "misgenders", "loves", "assualts", "hacks", "steals info from", "blushes in front of", "dies",
                         "defeats", "challenges", "glorifies", "bans", "hits", "endorces", "attacks", "meets", "grieves over death of",
                         "battles", "fights with", "starts drama with", "approves of", "violates agreement with", "blesses", "helps", "creates",
-                        "resurrects", "eats"]
+                        "resurrects", "eats", "is dating", "is in an affair with", "is cheating with"]
         $scope.headers = ["Sources reveal the SHOCKING information that ", "BREAKING NEWS - ", "You would have NEVER guessed that ",
-                            "LEAKED - ", "SCANDALOUS information regarding the fact that ", "Did you know that ", "It's truly frustrating that",
-                            "Republicans are upset that ", "Democrats are upset that ", "Millenials can't believe that "];
+                            "LEAKED - ", "SCANDALOUS information regarding the fact that ", "Did you know that ", "It's truly frustrating that ",
+                            "Republicans are upset that ", "Democrats are upset that ", "Millenials can't believe that ", "NO ONE expected that "];
         $scope.footers = ["What will happen next?", "Upvote to show your support.", "We demand answers.", "Will anyone truly understand?",
                             "They have yet to respond.", "How much longer can they get away with it?", "NO ONE believes it.", "Not surprisingly, this is the second time this year.",
-                            "When will they actually listen to us?", "Could this be part of a bigger scheme?"];
+                            "When will they actually listen to us?", "Could this be part of a bigger scheme?", "This is why people are upset.",
+                            "Why couldn't this wait?", "We'll have updates in the weeks to come."];
     }
 ])
