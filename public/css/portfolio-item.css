@@ -26,10 +26,12 @@ input {
 #submit_btn {
   margin-left: 1%;
   width: 48%;
+  border-radius: 10px;
 }
 
 #prev_btn {
   width: 100%;
+  border-radius: 10px;
 }
 
 .div1 {

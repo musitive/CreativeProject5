@@ -22,13 +22,13 @@ angular.module('submission', [])
         ]
 
         $scope.makePost = function() {
-            person = document.getElementById("person").value;
-            place = document.getElementById("place").value;
-            object = document.getElementById("object").value;
-            verb = document.getElementById("verb").value;
+            $scope.person = document.getElementById("person").value;
+            $scope.place = document.getElementById("place").value;
+            $scope.object = document.getElementById("object").value;
+            $scope.verb = document.getElementById("verb").value;
             $scope.img = document.getElementById("img").value;
 
-            $scope.headline = person + " loves to " + verb + " " + object + " in " + place;
+            $scope.headline = $scope.person + " loves to " + $scope.verb + " " + $scope.object + " in " + $scope.place;
             $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
         }
 
