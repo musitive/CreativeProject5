@@ -182,7 +182,7 @@ angular.module('submission', [])
                 ]
             },
             "pope": {
-                name: "the Pope",
+                name: "The Pope",
                 images: [
                     "https://cruxnow.com/wp-content/uploads/2016/12/20160914T0844-5137-CNS-POPE-AUDIENCE-PRINCES-1024x675.jpg",
                     "http://www.telegraph.co.uk/content/dam/news/2017/04/13/TELEMMGLPICT000125832463_trans_NvBQzQNjv4BqrnKnv-EZ40EhYX8nU7dr81GwsaKsFlgjiGj2x2RvG-c.jpeg?imwidth=450",
@@ -248,11 +248,11 @@ angular.module('submission', [])
                             "Johnny Depp", "database", "government website", "gun laws", "the poor", "the rich", "the 1%", "Bernie Sanders"]
         $scope.verbs = ["pets", "plays with", "smells", "cleans", "launches", "deceives", "preserves", "kills", "kisses", "forces",
                         "passes", "sins against", "run", "stabs", "knives", "trumps", "devours", "captures", "accuses", "destroys",
-                        "laughs at", "forbids", "contemplates", "eats", "offends", "triggers", "cancels", "distrupts", "enjoys",
+                        "laughs at", "forbids", "eats", "offends", "triggers", "cancels", "distrupts", "enjoys",
                         "eliminates", "trashes", "insults", "pleases", "generates", "compliments", "battles", "dresses up as", "wears",
                         "buys", "spreads", "encourages", "pressures", "leads on", "dedicates", "fires", "lies about", "trafficks", "sells",
                         "marries", "tweets at", "misgenders", "loves", "assualts", "hacks", "steals info from", "blushes in front of", "dies",
-                        "defeats", "challenges", "glorifies", "bans", "hits", "hugs", "attacks", "meets", "grieves over death of",
+                        "defeats", "challenges", "glorifies", "bans", "hits", "endorces", "attacks", "meets", "grieves over death of",
                         "battles", "fights with", "starts drama with", "approves of", "violates agreement with", "blesses", "helps", "creates",
                         "resurrects"]
         $scope.headers = [];
