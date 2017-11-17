@@ -9,10 +9,12 @@ angular.module('submission', [])
         $scope.random_img = "http://ak9.picdn.net/shutterstock/videos/8920699/thumb/2.jpg";
         $scope.headline = "";
         $scope.description = "";
+        $scope.h = "";
+        $scope.f = "";
         
         $scope.makePost = function() {
             $scope.headline = $scope.random_name + " " + $scope.random_verb.toUpperCase() + " " + $scope.random_object + " in " + $scope.random_place;
-            $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
+            $scope.description = $scope.h + $scope.headline + ".  " + $scope.f;
         }
 
         $scope.submitPost = function() {
@@ -43,6 +45,8 @@ angular.module('submission', [])
             $scope.random_object = $scope.objects[Math.floor(Math.random() * $scope.objects.length)];
             $scope.random_verb = $scope.verbs[Math.floor(Math.random() * $scope.verbs.length)];
             $scope.random_img = $scope.things[key].images[Math.floor(Math.random() * $scope.things[key].images.length)];
+            $scope.h = $scope.headers[Math.floor(Math.random() * $scope.headers.length)];
+            $scope.f = $scope.footers[Math.floor(Math.random() * $scope.footers.length)];
             $scope.makePost();
         }
 
@@ -245,7 +249,8 @@ angular.module('submission', [])
                             "Empire State Building", "Statue of Liberty", "Doritos", "BYU students", "Bernie Sanders", "Hillary Clinton", "fake news",
                             "Disney", "Russia", "Vladimir Putin", "Wendy's", "University of Utah", "Star Trek", "Boy Scouts of America",
                             "Stalin", "Pewdiepie", "children", "iPhone", "Twitter following", "Obi Wan Kenobi", "Sport's Car", "Imagine Dragons",
-                            "Johnny Depp", "database", "government website", "gun laws", "the poor", "the rich", "the 1%", "Bernie Sanders"]
+                            "Johnny Depp", "database", "government website", "gun laws", "the poor", "the rich", "the 1%", "Bernie Sanders",
+                            "Rick and Morty Fans", "the CIA", "the FBI", ]
         $scope.verbs = ["pets", "plays with", "smells", "cleans", "launches", "deceives", "preserves", "kills", "kisses", "forces",
                         "passes", "sins against", "run", "stabs", "knives", "trumps", "devours", "captures", "accuses", "destroys",
                         "laughs at", "forbids", "eats", "offends", "triggers", "cancels", "distrupts", "enjoys",
@@ -255,6 +260,7 @@ angular.module('submission', [])
                         "defeats", "challenges", "glorifies", "bans", "hits", "endorces", "attacks", "meets", "grieves over death of",
                         "battles", "fights with", "starts drama with", "approves of", "violates agreement with", "blesses", "helps", "creates",
                         "resurrects"]
-        $scope.headers = [];
+        $scope.headers = ["Sources reveal the SHOCKING information that ", "BREAKING NEWS - "];
+        $scope.footers = ["What will happen next?"];
     }
 ])
