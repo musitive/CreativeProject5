@@ -7,17 +7,11 @@ angular.module('submission', [])
         $scope.random_object = "";
         $scope.random_verb = "";
         $scope.random_img = "http://ak9.picdn.net/shutterstock/videos/8920699/thumb/2.jpg";
-        $scope.img = "http://ak9.picdn.net/shutterstock/videos/8920699/thumb/2.jpg";
         $scope.headline = "";
         $scope.description = "";
         
-        $scope.makeImage = function() {
-            $scope.img = $scope.random_img;
-        }
-
         $scope.makePost = function() {
             $scope.headline = $scope.random_name + " " + $scope.random_verb.toUpperCase() + " " + $scope.random_object + " in " + $scope.random_place;
-            makeImage();
             $scope.description = "Sources reveal the SHOCKING information that " + $scope.headline;
         }
 
