@@ -267,7 +267,7 @@ angular.module('submission', [])
             }
         }
         $scope.names = ["donald", "kim", "taylor", "obama", "anderson", "fox", "tim", "sundar", "mark", "kanye", "clinton", "putin", "kar", "pope",
-                        "sanders", "hayden", "biden", "biden", "emma", "george", "cage"]
+                        "sanders", "hayden", "mike", "biden", "biden", "emma", "george", "cage"]
         $scope.places = ["Afghanistan", "Albania", "Algeria", "Antarctica", "Argentina", "Armenia", "Australia", "Austria", "Azerbaijan",
                         "Bahamas", "Bahrain", "Bangladesh", "Barbados", "Belarus", "Belgium", "Belize", "Benin", "Bermuda", "Bhutan",
                         "Bolivia","Botswana", "Bouvet Island", "Brazil", "British Indian Ocean Territory", "Bulgaria", "Burkina Faso",
