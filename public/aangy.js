@@ -305,7 +305,7 @@ angular.module('submission', [])
                         "laughs at", "forbids", "eats", "offends", "triggers", "cancels", "distrupts", "enjoys",
                         "eliminates", "trashes", "insults", "pleases", "generates", "compliments", "battles", "dresses up as", "wears",
                         "buys", "spreads", "encourages", "pressures", "leads on", "dedicates", "fires", "lies about", "trafficks", "sells",
-                        "marries", "tweets at", "misgenders", "loves", "assualts", "hacks", "steals info from", "blushes in front of", "dies",
+                        "marries", "tweets at", "misgenders", "loves", "assualts", "hacks", "steals info from", "blushes in front of", "dies next to",
                         "defeats", "challenges", "glorifies", "bans", "hits", "endorces", "attacks", "meets", "grieves over death of",
                         "battles", "fights with", "starts drama with", "approves of", "violates agreement with", "blesses", "helps", "creates",
                         "resurrects", "eats", "is dating", "is in an affair with", "is cheating with", "defends", "scares off", "appreciates"]
