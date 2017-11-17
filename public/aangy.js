@@ -39,14 +39,10 @@ angular.module('submission', [])
         }
 
         $scope.submitPost = function() {
-            $scope.makePost();
-            if ($scope.person == "" ||
-                $scope.object == "" ||
-                $scope.verb == "" ||
-                $scope.img == "" ||
-                $scope.place == "") {
-                alert("Please finish your FAKE headline");
-            } else {
+            if ($scope.headline == "" ||
+                $scope.description == "") {
+                    alert("Please finish your FAKE headline");
+                } else {
                 console.log("submit time boi");
                 console.log($scope.headline);
                 var json = {
