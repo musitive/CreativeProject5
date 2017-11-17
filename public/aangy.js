@@ -42,7 +42,7 @@ angular.module('submission', [])
             $scope.random_place = $scope.places[Math.floor(Math.random() * $scope.places.length)];
             $scope.random_object = $scope.objects[Math.floor(Math.random() * $scope.objects.length)];
             $scope.random_verb = $scope.verbs[Math.floor(Math.random() * $scope.verbs.length)];
-            $scope.random_img = $scope.images[key].images[Math.floor(Math.random() * $scope.images[key].images.length)];
+            $scope.random_img = $scope.things[key].images[Math.floor(Math.random() * $scope.things[key].images.length)];
             $scope.makePost();
         }
 
