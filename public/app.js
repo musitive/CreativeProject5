@@ -1,29 +1,34 @@
-angular.module('posts', [])
+angular.module('fakeNews', [])
 .controller('MainCtrl', [
   '$scope', '$http',
   function($scope, $http){
     $scope.posts = [];
+    $scope.addUpVote = function(post) {
+          $scope.upvote(post);
+      }
+    $scope.addDownVote = function(post) {
+          $scope.downvote(post); 
+      }
     $scope.getAll = function() {
         return $http.get('/headlines').success(function(data){
             console.log(data); 
             angular.copy(data, $scope.posts);
-        });
-    };
-/*
-    $scope.incrementUpvotes = function(comment) {
-      $scope.upvote(comment);
-    };
-    $scope.addComment = function() {
-      $scope.comments.push({title:$scope.formContent,upvotes:0});
-      $scope.formContent='';
-    };
-    $scope.upvote = function(comment) {
-      return $http.put('/comments/' + comment._id + '/upvote')
+            });
+        };
+      $scope.getAll();
+    $scope.upvote = function(post) {
+      return $http.put('/headlines/' + post._id + '/upvote')
         .success(function(data){
           console.log("upvote worked");
-          comment.upvotes += 1;
+          post.upvotes += 1;
         });
-    };*/
-
+    };
+    $scope.downvote = function(post) {
+      return $http.put('/headlines/' + post._id + '/downvote')
+        .success(function(data){
+          console.log("downvote worked");
+          post.upvotes -= 1;
+        });
+    };      
   }
 ]);
