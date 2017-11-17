@@ -64,10 +64,10 @@
         <div class="col-md-4">
           <form ng-click="previewPost()">
             <h3 class="my-3" style="text-align:center">Fake Article Preview</h3>
-            <h3><small><input class="headline" value="{{headline}}"/></small></h3>
+            <h4><textarea class="headline">{{headline}}</textarea></h4>
             <img ng-src="{{img}}" style="width:100%;height:auto;"/>
             <br><br>
-            <input class="description" value="{{description}}"/>
+            <textarea class="description">{{description}}</textarea>
             <br><br>
             <button class="btn btn-info btn-md" id="prev_btn" type="submit">Preview Post</button>
           </form>  
