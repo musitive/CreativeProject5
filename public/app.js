@@ -22,12 +22,14 @@ angular.module('fakeNews', [])
           console.log("upvote worked");
           post.upvotes += 1;
         });
+        $scope.getAll();
     };
     $scope.downvote = function(post) {
       return $http.put('/headlines/' + post._id + '/downvote')
         .success(function(data){
           console.log("downvote worked");
           post.upvotes -= 1;
+          $scope.getAll();
         });
     };      
   }
