@@ -97,3 +97,6 @@ video{
 textarea {
   padding: 10px;
 }
+.row {
+  word-break:break-all;
+}
